@@ -11,13 +11,35 @@
                 
             }
 
+            @keyframes fadeinpara{
+                0%{
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 1;
+                }
+            }
+
+            @font-face{
+                font-family: mars;
+                src: url(Mars\ Bold.ttf);
+            }
+
             @font-face {
-                font-family: myfont;
-                src: url(Mars.ttf);
+                font-family: kusanagi;
+                src: url(Kusanagi.otf);
+                font-weight: lighter;
+            }
+
+            .footer{
+                padding: 3px;
+                font-size: 20px;
+                color: azure;
+                text-align: center;
             }
 
             body{
-                background: url(tenacity.jpg);
+                background-color: rgb(0, 0, 0);
                 background-position-x: center ;
                 background-position: center;  
                 background-attachment:fixed;  
@@ -25,18 +47,23 @@
             }
 
             .head{
-                font: myfont;
+                font-family: mars;
                 animation: fadeinhead ease 3s;
                 font-size: 100px;
                 text-align: center;
-                color: turquoise;
+                vertical-align: text-top;
+                color: white;
             }
 
             .para{
-                color: gray; 
+                font-family: kusanagi;
+                animation: fadeinpara ease 6s;
+                color: white; 
                 text-align:center;
                 font-size: 30px;
+
             }
+
 
         </style>
         <h1 class="head">
@@ -45,14 +72,9 @@
         <p class="para">
             Tenacity is a community of students by students to help them
             develop their skills in an inclusive environment while making them
-            learn and grow together as a community.
+            learn and grow together as a community.<br>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi neque elit, imperdiet in dignissim ac, condimentum in nisi.<br>
-            Fusce et enim ut nisl euismod iaculis. Sed laoreet cursus lobortis. Donec nec lobortis risus, nec euismod nibh. Integer a sollicitudin enim. Nullam ut neque ante. Cras quis ultricies leo, non ornare justo. Quisque in sapien sed velit consequat bibendum sit amet eu mi.<br>
-            Phasellus lacinia ante ut dolor luctus, id vestibulum mi eleifend.
-            Praesent faucibus, eros quis eleifend varius, tortor odio accumsan nibh, sed faucibus est odio consectetur tellus.<br>
-             Donec sit amet ex velit. Aliquam pellentesque eget tortor et hendrerit. Proin odio arcu, tincidunt vitae lacus at, eleifend tincidunt lorem. Curabitur eu enim eget lectus vehicula volutpat.<br>
-             Curabitur non elit vestibulum, porttitor leo pulvinar, scelerisque felis. Maecenas ac diam pretium, consectetur mauris eu, venenatis justo. Duis luctus euismod eleifend. Aliquam interdum dui eget risus accumsan pulvinar.<br> 
-             Donec ex metus, ultrices vitae tellus vitae, eleifend vestibulum enim. Fusce dui lorem, molestie ut malesuada ut, feugiat sed sem.
+            Fusce et enim ut nisl euismod iaculis. Sed laoreet cursus lobortis. Donec nec lobortis risus, nec euismod nibh. Integer a sollicitudin enim. Nullam ut neque ante.
         </p>
         <h1 class="head">
             Lorem Ipsum
@@ -60,15 +82,17 @@
         <p class="para">
             Nunc sed interdum nulla. Pellentesque mollis metus ex, id gravida est tristique id. Duis eu efficitur metus. Maecenas et lectus pharetra, imperdiet quam ac, ultricies arcu. Fusce vel risus arcu.<br>
             Nullam a enim vitae orci fermentum varius. Praesent convallis enim in massa laoreet, ut pretium mi pulvinar.<br>
-             Etiam lobortis augue in elit dictum hendrerit. Etiam porta efficitur nibh, commodo aliquet leo ultrices nec. Vestibulum at dui nisl.<br>
+            Etiam lobortis augue in elit dictum hendrerit. Etiam porta efficitur nibh, commodo aliquet leo ultrices nec. Vestibulum at dui nisl.<br>
             Etiam eu mi tempor, euismod erat eget, venenatis est. Proin sit amet semper libero. Maecenas feugiat vestibulum auctor. Donec mattis erat lectus. In non quam porttitor, ultricies arcu non, luctus sem. Mauris dictum hendrerit sem.<br>
             In semper, nibh vitae luctus suscipit.<br>
             turpis ipsum facilisis turpis, ut ultrices est libero vel justo. Pellentesque metus arcu, aliquet facilisis aliquam vel, volutpat dignissim massa. Mauris id mauris euismod, tempus justo sit amet, viverra dolor.<br>
             Aenean nulla ipsum, facilisis lobortis ligula eu, varius pellentesque tellus. Morbi placerat diam nec porta commodo. Aenean hendrerit sit amet purus sed efficitur. Ut mollis metus eget euismod sollicitudin.<br>
-            Quisque et pretium massa, eget porttitor orci. In eget purus arcu.
-            Vestibulum luctus orci tortor, sit amet porttitor felis vehicula feugiat. Cras sed vestibulum velit.<br> Curabitur efficitur pharetra arcu, et luctus tortor ultrices a. Nullam pulvinar tempus purus non tristique. Duis interdum sem turpis, in luctus metus tincidunt volutpat. <br>Nullam varius nibh vel eros interdum, id tincidunt justo iaculis. Suspendisse et neque hendrerit, facilisis justo nec, pharetra purus. Vestibulum risus felis, volutpat non sodales non, accumsan non felis. Maecenas quis congue tellus.<br> In hac habitasse platea dictumst. Curabitur scelerisque faucibus arcu, eget fringilla ipsum porttitor vitae. Morbi a arcu eget lectus interdum facilisis. <br>Fusce ullamcorper nunc eu tempor vestibulum.
+            vestibulum.
 
         </p>
+        <footer class="footer">
+            <p>Copyright@2023</p>
+        </footer>
 
 
 
