@@ -1,0 +1,78 @@
+@keyframes fadeinhead{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+@keyframes fadeinpara{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@font-face{
+    font-family: mars;
+    src: url(Mars\ Bold.ttf);
+}
+
+@font-face {
+    font-family: kusanagi;
+    src: url(Kusanagi.otf);
+    font-weight: lighter;
+}
+
+.footer{
+    padding: 3px;
+    font-size: 20px;
+    color: azure;
+    text-align: center;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    background-position-x: center ;
+    background-position: center;  
+    background-attachment:fixed;  
+    background-blend-mode:overlay;        
+}
+
+.head{
+    font-family: mars;
+    animation: fadeinhead ease 3s;
+    font-size: 80px;
+    text-align: center;
+    vertical-align: text-top;
+    color: white;
+}
+
+.para{
+    font-family: kusanagi;
+    animation: fadeinpara ease 6s;
+    color: white; 
+    text-align:center;
+    font-size: 20px;
+
+}
+
+.navig{
+    text-align: center;
+    font-size: 30px;
+    color: aqua;
+    padding-left: 800px;
+}
+
+a:link, a:visited{
+    color: white;
+}
+
+button{
+    background-color: rgb(177, 83, 192);
+    font-size: 20px;
+}
